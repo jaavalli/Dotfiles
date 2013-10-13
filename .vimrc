@@ -107,8 +107,9 @@ nnoremap L $
 
 "jj to esc
 imap jj <Esc>
-
 let g:EasyMotion_leader_key = 'ö'
+
+nmap z :call SwitchSourceHeader()<CR>
 
 "************************************
 "-------------PLUGINS----------------
@@ -122,3 +123,15 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
+
+"
+"FUNCTIONS
+"
+function! SwitchSourceHeader()
+  "update!
+  if (expand ("%:e") == "cpp")
+    find %:t:r.h
+  else
+    find %:t:r.cpp
+  endif
+endfunction
