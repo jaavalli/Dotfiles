@@ -13,7 +13,7 @@ syntax on
 set hidden
 
 "Folding settings
-set foldmethod syntax
+set foldmethod=syntax
 set foldlevelstart=20
 
 " Better command-line completion
@@ -85,9 +85,11 @@ set autoread
 
 set noswapfile
 
-"**********************************
+"Don't confirm yuc:s conf loading and define fallback
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_global_ycm_extra_conf ='$HOME/.ycm_extra_conf.py'
+
 "------------INDENTATION-----------
-"**********************************
 
 " Indentation settings for using 2 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
@@ -127,10 +129,11 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
+Bundle 'restore_view.vim'
 
-"
-"FUNCTIONS
-"
+"************************************
+"------------FUNCTIONS---------------
+"************************************
 function! SwitchSourceHeader()
   "update!
   if (expand ("%:e") == "cpp")
