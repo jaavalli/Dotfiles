@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 "**************************************
-"----------SETTINGS---------------------
+"----------SETTINGS--------------------
 "**************************************
 
 " Enable syntax highlighting
@@ -29,7 +29,7 @@ set smartcase
 set backspace=indent,eol,start
 
 " When opening a new line and no filetype-specific indenting is enabled, keep
-" the same indent as the line you're currently on. Useful for READMEs, etc.
+" the same indent as the line you're currently on.
 set autoindent
 
 "Relative line numbering
@@ -69,8 +69,6 @@ set pastetoggle=<F11>
 "cursor position to lower corner
 set cursorline
 
-"Filetype settings
-"filetype plugin on
 filetype  plugin indent on
 
 set grepprg=grep\ -nH\ $*
@@ -92,11 +90,6 @@ set noswapfile
 set shiftwidth=2
 set softtabstop=4
 set expandtab
-
-" Indentation settings for using hard tabs for indent. Display tabs as
-" two characters wide.
-"set shiftwidth=2
-"set tabstop=2
 
 "***********************************
 "-------------MAPPINGS--------------
@@ -126,7 +119,6 @@ Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'L9'
-"Bundle 'Rip-Rip/clang_complete'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
