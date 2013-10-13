@@ -12,6 +12,10 @@ call vundle#rc()
 syntax on
 set hidden
 
+"Folding settings
+set foldmethod syntax
+set foldlevelstart=20
+
 " Better command-line completion
 set wildmenu
 
@@ -109,7 +113,7 @@ nnoremap L $
 imap jj <Esc>
 let g:EasyMotion_leader_key = 'ö'
 
-nmap z :call SwitchSourceHeader()<CR>
+nmap zz :call SwitchSourceHeader()<CR>
 
 "************************************
 "-------------PLUGINS----------------
