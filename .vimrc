@@ -83,6 +83,7 @@ set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/afte
 
 set undolevels=100
 
+:set tw=80
 set autoread
 
 set noswapfile
@@ -92,12 +93,13 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf ='$HOME/.ycm_extra_conf.py'
 let g:ycm_add_preview_to_completeopt = 0
 
+let g:NERDTreeDirArrows=0
 "------------INDENTATION-----------
 
 " Indentation settings for using 2 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
 set shiftwidth=2
-set softtabstop=4
+set softtabstop=2
 set expandtab
 
 "***********************************
@@ -135,3 +137,4 @@ Bundle 'scrooloose/syntastic'
 Bundle 'restore_view.vim'
 Bundle 'surround.vim'
 Bundle 'a.vim'
+Bundle 'bufexplorer.zip'
