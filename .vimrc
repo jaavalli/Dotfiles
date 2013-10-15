@@ -94,6 +94,8 @@ let g:ycm_global_ycm_extra_conf ='$HOME/.ycm_extra_conf.py'
 let g:ycm_add_preview_to_completeopt = 0
 
 let g:NERDTreeDirArrows=0
+let NERDTreeIgnore = ['\.o$', '\.pro$']
+
 "------------INDENTATION-----------
 
 " Indentation settings for using 2 spaces instead of tabs.
