@@ -15,6 +15,8 @@ set hidden
 "Folding settings
 set foldmethod=syntax
 set foldlevelstart=20
+hi Folded ctermfg=5
+hi Folded ctermbg=8
 
 " Better command-line completion
 set wildmenu
@@ -88,6 +90,7 @@ set noswapfile
 "Don't confirm yuc:s conf loading and define fallback
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf ='$HOME/.ycm_extra_conf.py'
+let g:ycm_add_preview_to_completeopt = 0
 
 "------------INDENTATION-----------
 
@@ -115,7 +118,7 @@ nnoremap L $
 imap jj <Esc>
 let g:EasyMotion_leader_key = 'ö'
 
-nmap zz :call SwitchSourceHeader()<CR>
+nmap zz :A<CR> 
 
 "************************************
 "-------------PLUGINS----------------
@@ -130,15 +133,5 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'restore_view.vim'
-
-"************************************
-"------------FUNCTIONS---------------
-"************************************
-function! SwitchSourceHeader()
-  "update!
-  if (expand ("%:e") == "cpp")
-    find %:t:r.h
-  else
-    find %:t:r.cpp
-  endif
-endfunction
+Bundle 'surround.vim'
+Bundle 'a.vim'
