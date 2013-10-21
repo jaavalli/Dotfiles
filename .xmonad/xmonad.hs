@@ -9,7 +9,7 @@ import qualified Data.Map        as M
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
 
-myTerminal      = "terminator"
+myTerminal      = "urxvt"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
