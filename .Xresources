@@ -19,12 +19,12 @@ URxvt.bigfont_key:       o
 URxvt.borderLess:        no
 URxvt.buffered:          false
 URxvt.depth:             32
-URxvt.font:              xft:Termsyn-10
+URxvt.font:              xft:Termsyn:pixelsize=16:style=Regular
 ! URxvt.italicFont:        xft:Monospace:style=Oblique:pixelsize=10
 URxvt.hold:              true
 URxvt.internalBorder:    0
 URxvt.jumpScroll:        true
-URxvt.keysym.M-u:        perl:url-select:select_next
+URxvt.keysym.C-i:        perl:url-select:select_next
 URxvt.letterSpace:       0
 URxvt.loginShell:        true
 URxvt.perl-ext:          default,url-select
@@ -50,6 +50,6 @@ XTerm*metaSendsEscape: true
 XTerm*saveLines: 4096
 XTerm*jumpScroll: true
 XTerm*multiScroll: true
-XTerm*faceName: xft:Termsyn-10
+! XTerm*faceName: xft:Termsyn-10
 
 *saveLines:1000
