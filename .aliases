@@ -1,0 +1,20 @@
+##############ALIASES#####################
+
+source $HOME/.aliases_priv
+
+alias cdh='cd $HOME'
+alias cddc='cd $HOME/Documents'
+alias cddw='cd $HOME/Downloads'
+
+alias cdh='cd $HOME'
+alias cddc='cd $HOME/Documents'
+alias cddw='cd $HOME/Downloads'
+alias .='cd ..'
+alias ..='cd ../..'
+alias ...='cd ../../..'
+
+
+
+alias r='ranger'
+
+
