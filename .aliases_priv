@@ -1,7 +1,0 @@
-
-alias tilhi='ssh jaavalli@mustatilhi.cs.tut.fi'
-alias amadeus='ssh jaavalli@amadeus.cc.tut.fi'
-alias vekkuli='ssh ville@vekkuli.tontut.fi'
-alias mntvek='sshfs ville@vekkuli.tontut.fi:/storage /home/ville/storage'
-alias mnttilhi='sshfs jaavalli@mustatilhi.cs.tut.fi:/home/jaavalli /home/ville/tilhi'
-alias mntama='sshfs jaavalli@amadeus.cc.tut.fi:/home/jaavalli /home/ville/amadeus'
