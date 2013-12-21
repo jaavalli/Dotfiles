@@ -1,8 +1,11 @@
 #Define path for this user
 PATH="${PATH}:~/bin:~/Koodia/Scripts"
 EDITOR="vim"
+TERM=rxvt
 
-source $HOME/.aliases
+if [ -f $HOME/.aliases ]; then
+  source $HOME/.aliases
+fi
 
 ###########################################
 
@@ -24,4 +27,6 @@ fi
 #Launch keychain
 eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
-source $HOME/.bashrc_local
+if [ -f $HOME/.bashrc_local ]; then
+  source $HOME/.bashrc_local
+fi
