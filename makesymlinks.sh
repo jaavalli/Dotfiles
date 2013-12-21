@@ -9,7 +9,7 @@
 dir=~/Dotfiles                    # dotfiles directory
 olddir=~/Dotfiles_old             # old dotfiles backup directory
 files=".vimrc .compton.conf .i3 .tmux.conf .Xmodmap .xmonad .xmobarrc .xutils
-.Xresources .bashrc .aliases .aliases_priv"    # list of files/folders to symlink in homedir
+.Xresources .bashrc .aliases"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -26,7 +26,11 @@ echo "done"
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/$file ~/Dotfiles_old/
+
+    if [ -f $HOME/$file ]; then
+      mv ~/$file ~/Dotfiles_old/
+    fi
+
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
 done

@@ -1,6 +1,8 @@
 ##############ALIASES#####################
 
-source $HOME/.aliases_priv
+if [ -f $HOME/.aliases_priv ]; then
+  source $HOME/.aliases_priv
+fi
 
 alias cdh='cd $HOME'
 alias cddc='cd $HOME/Documents'
