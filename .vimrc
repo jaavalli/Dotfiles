@@ -83,7 +83,6 @@ set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/afte
 
 set undolevels=100
 
-:set tw=80
 set autoread
 
 set noswapfile
