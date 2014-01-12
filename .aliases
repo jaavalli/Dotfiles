@@ -18,5 +18,6 @@ alias ...='cd ../../..'
 
 
 alias r='ranger'
+alias sdn='shutdown now'
 
 
