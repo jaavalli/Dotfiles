@@ -19,7 +19,7 @@ URxvt.bigfont_key:       o
 URxvt.borderLess:        no
 URxvt.buffered:          false
 URxvt.depth:             32
-URxvt.font:              xft:Termsyn:pixelsize=16:style=Regular
+URxvt.font:              xft:Termsyn:pixelsize=18:style=Regular
 ! URxvt.italicFont:        xft:Monospace:style=Oblique:pixelsize=10
 URxvt.hold:              true
 URxvt.internalBorder:    0

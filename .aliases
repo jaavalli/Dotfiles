@@ -16,8 +16,12 @@ alias ..='cd ../..'
 alias ...='cd ../../..'
 
 
+alias todo='vim $HOME/Documents/todo.txt'
+alias vimrc='vim $HOME/.vimrc'
 
 alias r='ranger'
 alias sdn='shutdown now'
 
+alias upd='yaourt -Suy --ignore vim-runtime'
+alias inst='yaourt -S'
 

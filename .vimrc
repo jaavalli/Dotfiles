@@ -140,3 +140,8 @@ Bundle 'restore_view.vim'
 Bundle 'surround.vim'
 Bundle 'a.vim'
 Bundle 'bufexplorer.zip'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'tComment'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
