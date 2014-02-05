@@ -3,6 +3,9 @@ PATH="${PATH}:~/bin:~/Koodia/Scripts"
 EDITOR="vim"
 TERM=rxvt
 
+#Set vi keybindings to bash
+set -o vi
+
 if [ -f $HOME/.aliases ]; then
   source $HOME/.aliases
 fi

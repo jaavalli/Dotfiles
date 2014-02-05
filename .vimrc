@@ -31,6 +31,9 @@ set hlsearch
 set ignorecase
 set smartcase
 
+set tw=0
+set wrap 
+
 " Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
 
@@ -39,7 +42,7 @@ set backspace=indent,eol,start
 set autoindent
 
 "Relative line numbering
-set rnu
+"set rnu
 
 " Stop certain movements from always going to the first character of a line.
 set nostartofline
@@ -56,7 +59,7 @@ set laststatus=2
 set confirm
 
 " Enable use of the mouse for all modes
-"set mouse=a
+set mouse=a
 
 " Set the command window height to 2 lines, to avoid many cases of having to
 " "press <Enter> to continue"
@@ -128,20 +131,30 @@ nmap zz :A<CR>
 "-------------PLUGINS----------------
 "************************************
 Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-fugitive'                     
+"Better movement
+Bundle 'Lokaltog/vim-easymotion'                
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'L9'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
-Bundle 'restore_view.vim'
-Bundle 'surround.vim'
-Bundle 'a.vim'
-Bundle 'bufexplorer.zip'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'tComment'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
+"Keep cursor position after closing file
+Bundle 'restore_view.vim'                       
+"Edit braces
+Bundle 'surround.vim'                           
+"Quickly change between header and code
+Bundle 'a.vim'                                  
+"better buffer browsing
+Bundle 'bufexplorer.zip'                        
+Bundle 'tsaleh/vim-matchit'                     
+"Quickly comment code
+Bundle 'tComment'                               
+Bundle "MarcWeber/vim-addon-mw-utils"           
+"Useless?
+Bundle "tomtom/tlib_vim"                        
+"Snippets
+Bundle "garbas/vim-snipmate"                    
+"Minimap
+Bundle "koron/minimap-vim"
