@@ -103,9 +103,11 @@ let NERDTreeShowHidden=1
 "------------INDENTATION-----------
 
 " Indentation settings for using 2 spaces instead of tabs.
-set shiftwidth=2
-set softtabstop=2
-set expandtab
+set shiftwidth=4
+set softtabstop=4
+
+"Spaces istead of tabs
+"set expandtab
 
 "***********************************
 "-------------MAPPINGS--------------
@@ -125,7 +127,17 @@ nnoremap L $
 imap jj <Esc>
 let g:EasyMotion_leader_key = 'ö'
 
+"a.vim: Change .h <--> .cpp
 nmap zz :A<CR> 
+
+nnoremap - :Switch<cr>
+
+"Open bufexplorer
+nmap ++ \be
+
+"Snipmate
+imap <C-j> <Plug>snipMateNextOrTrigger
+smap <C-j> <Plug>snipMateNextOrTrigger
 
 "************************************
 "-------------PLUGINS----------------
@@ -138,7 +150,7 @@ Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'L9'
 Bundle 'scrooloose/nerdtree'
-"Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 "Keep cursor position after closing file
 Bundle 'restore_view.vim'                       
@@ -156,5 +168,9 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"                        
 "Snippets
 Bundle "garbas/vim-snipmate"                    
-"Minimap
-Bundle "koron/minimap-vim"
+"For quick value changing
+Bundle 'AndrewRadev/switch.vim'
+"latex
+Bundle 'LaTeX-Box-Team/LaTeX-Box'
+"json syntax
+Bundle 'elzr/vim-json'

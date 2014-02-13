@@ -25,6 +25,7 @@ alias sdn='shutdown now'
 alias gull='git pull'
 alias gush='git push'
 
-alias upd='yaourt -Suy --ignore vim-runtime'
+alias upd='yaourt -Suy'
 alias inst='yaourt -S'
 
+alias fixspoti='dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /MainWindow org.qtproject.Qt.QApplication.setStyleSheet string:"QLineEdit { background-color: #fff }"'

@@ -6,6 +6,9 @@ TERM=rxvt
 #Set vi keybindings to bash
 set -o vi
 
+bind "å":vi-movement-mode 
+bind -r "\e"
+
 if [ -f $HOME/.aliases ]; then
   source $HOME/.aliases
 fi

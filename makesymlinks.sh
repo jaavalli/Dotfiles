@@ -9,7 +9,7 @@
 dir=~/Dotfiles                    # dotfiles directory
 olddir=~/Dotfiles_old             # old dotfiles backup directory
 files=".vimrc .compton.conf .i3 .tmux.conf .Xmodmap .xmonad .xmobarrc .xutils
-.Xresources .bashrc .aliases"    # list of files/folders to symlink in homedir
+.Xresources .bashrc .aliases .asoundrc"    # list of files/folders to symlink in homedir
 
 ##########
 
