@@ -74,6 +74,7 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
 
+set clipboard=unnamedplus
 
 "cursor position to lower corner
 set cursorline

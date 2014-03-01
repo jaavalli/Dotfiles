@@ -29,7 +29,7 @@ bindsym $mod+Return exec urxvt # urxvt -e bash -c 'exec tmux new-session' #i3-se
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec dmenu_run
+bindsym $mod+p exec dmenu_run_aliases
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
