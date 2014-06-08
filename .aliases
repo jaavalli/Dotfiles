@@ -1,7 +1,7 @@
 ##############ALIASES#####################
 
 if [ -f $HOME/.aliases_priv ]; then
-  source $HOME/.aliases_priv
+   source $HOME/.aliases_priv
 fi
 
 alias cdh='cd $HOME'
@@ -29,3 +29,4 @@ alias upd='yaourt -Suy'
 alias inst='yaourt -S'
 
 alias fixspoti='dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /MainWindow org.qtproject.Qt.QApplication.setStyleSheet string:"QLineEdit { background-color: #fff }"'
+

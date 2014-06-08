@@ -35,17 +35,12 @@ URxvt.secondaryScreen:   false
 URxvt.skipScroll:        true
 URxvt.smallfont_key:     p
 URxvt.tripleclickwords:  on
-URxvt.url-select.launcher:  google-chrome-beta
+URxvt.url-select.launcher:  google-chrome-stable
+URxvt.url-launcher:	google-chrome-stable 
 URxvt.url-select.underline: true
-URxvt*keysym.Control-Up:    \033[1;5A
-URxvt*keysym.Control-Down:  \033[1;5B
-URxvt*keysym.Control-Left:  \033[1;5D
-URxvt*keysym.Control-Right: \033[1;5C
-URxvt.perl-ext-common:  vtwheel, font-size
+URxvt.perl-ext-common:  default,matcher,vtwheel,font-size, clipboard
 URxvt.keysym.C-Up:     perl:font-size:increase
-URxvt.keysym.C-Down:   perl:font-size:decrease
-URxvt.keysym.C-S-Up:   perl:font-size:incglobal
-URxvt.keysym.C-S-Down: perl:font-size:decglobal
+URxvt.matcher.button: 1
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
@@ -56,6 +51,18 @@ XTerm*metaSendsEscape: true
 XTerm*saveLines: 4096
 XTerm*jumpScroll: true
 XTerm*multiScroll: true
-! XTerm*faceName: xft:Termsyn-10
+
+!URxvt*keysym.Control-Up:    \033[1;5A
+!URxvt*keysym.Control-Down:  \033[1;5B
+!URxvt*keysym.Control-Left:  \033[1;5D
+!URxvt*keysym.Control-Right: \033[1;5C
+URxvt.keysym.C-Right:     perl:font-size:increase
+URxvt.keysym.C-Left:   perl:font-size:decrease
+URxvt.keysym.C-S-Right:   perl:font-size:incglobal
+URxvt.keysym.C-S-Left: perl:font-size:decglobal
+
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
 *saveLines:1000

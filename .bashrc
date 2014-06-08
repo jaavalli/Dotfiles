@@ -1,5 +1,5 @@
 #Define path for this user
-PATH="${PATH}:~/bin:~/Koodia/Scripts"
+PATH="${PATH}:~/Bin:~/Scripts"
 EDITOR="vim"
 TERM=rxvt
 
@@ -11,6 +11,7 @@ bind -r "\e"
 
 if [ -f $HOME/.aliases ]; then
   source $HOME/.aliases
+  echo "aliases loaded"
 fi
 
 ###########################################
