@@ -35,8 +35,8 @@ URxvt.secondaryScreen:   false
 URxvt.skipScroll:        true
 URxvt.smallfont_key:     p
 URxvt.tripleclickwords:  on
-URxvt.url-select.launcher:  google-chrome-stable
-URxvt.url-launcher:	google-chrome-stable 
+URxvt.url-select.launcher:  google-chrome-beta
+URxvt.url-launcher:	google-chrome-beta 
 URxvt.url-select.underline: true
 URxvt.perl-ext-common:  default,matcher,vtwheel,font-size, clipboard
 URxvt.keysym.C-Up:     perl:font-size:increase

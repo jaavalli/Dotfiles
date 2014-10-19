@@ -104,6 +104,13 @@ let NERDTreeShowHidden=1
 
 let g:syntastic_enable_highlighting = 0
 
+"Arduino syntax
+au BufRead,BufNewFile *.pde set filetype=arduino
+au BufRead,BufNewFile *.ino set filetype=arduino
+
+"monitor serial 
+let g:vim_arduino_auto_open_serial = 1
+
 "------------INDENTATION-----------
 
 " Indentation settings for using 2 spaces instead of tabs.
@@ -178,3 +185,8 @@ Bundle 'AndrewRadev/switch.vim'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
 "json syntax
 Bundle 'elzr/vim-json'
+
+Bundle 'jaxbot/brolink.vim'
+Bundle 'emmet.vim'
+Bundle 'jplaut/vim-arduino-ino'
+Bundle 'Arduino-syntax-file'

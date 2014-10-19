@@ -19,6 +19,8 @@ alias t='urxvt -cd $PWD &'
 
 alias todo='vim $HOME/Documents/todo.txt'
 alias vimrc='vim $HOME/.vimrc'
+alias mntg='google-drive-ocamlfuse $HOME/Gdrive'
+alias umntg='fusermount -u $HOME/Gdrive'
 
 alias r='ranger'
 alias sdn='shutdown now'
