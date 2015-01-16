@@ -2,6 +2,7 @@
 PATH="${PATH}:~/Bin:~/Scripts"
 EDITOR="vim"
 TERM=rxvt
+export BROWSER="google-chrome-beta"
 
 #Set vi keybindings to bash
 set -o vi

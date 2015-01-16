@@ -9,7 +9,6 @@ call vundle#rc()
 "**************************************
 
 " Enable syntax highlighting
-syntax on
 set hidden
 
 "Folding settings
@@ -42,7 +41,7 @@ set backspace=indent,eol,start
 set autoindent
 
 "Relative line numbering
-"set rnu
+set rnu
 
 " Stop certain movements from always going to the first character of a line.
 set nostartofline
@@ -115,10 +114,10 @@ let g:vim_arduino_auto_open_serial = 1
 
 " Indentation settings for using 2 spaces instead of tabs.
 set shiftwidth=4
-set softtabstop=4
+set tabstop=4
 
 "Spaces istead of tabs
-"set expandtab
+"set expandtab='noexpandtab'
 
 "***********************************
 "-------------MAPPINGS--------------
@@ -186,7 +185,9 @@ Bundle 'LaTeX-Box-Team/LaTeX-Box'
 "json syntax
 Bundle 'elzr/vim-json'
 
-Bundle 'jaxbot/brolink.vim'
 Bundle 'emmet.vim'
 Bundle 'jplaut/vim-arduino-ino'
 Bundle 'Arduino-syntax-file'
+Bundle 'digitaltoad/vim-jade'
+
+syntax on
