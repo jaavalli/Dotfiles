@@ -148,7 +148,7 @@ inoremap <C-s> <esc>:w<ENTER>a
 nnoremap - :Switch<cr>
 
 "Open bufexplorer
-"nmap ++ \be
+nmap ++ \be
 
 "Snipmate
 imap <C-j> <Plug>snipMateNextOrTrigger
