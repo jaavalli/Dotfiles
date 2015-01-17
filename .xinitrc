@@ -16,4 +16,3 @@ keynav &
 xset m 1/2 4
 dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /MainWindow org.qtproject.Qt.QApplication.setStyleSheet string:"QLineEdit { background-color: #fff }" &
 exec i3
-

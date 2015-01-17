@@ -5,7 +5,10 @@ TERM=rxvt
 export BROWSER="google-chrome-beta"
 
 #Set vi keybindings to bash
-set -o vi
+#set -o vi
+
+#Stop <C-s> to freeze terminal
+stty -ixon
 
 bind "å":vi-movement-mode 
 bind -r "\e"

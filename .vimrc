@@ -137,17 +137,41 @@ nnoremap L $
 imap jj <Esc>
 let g:EasyMotion_leader_key = 'ö'
 
+imap <C-n> <backspace>
+
 "a.vim: Change .h <--> .cpp
 nmap zz :A<CR> 
+
+nmap <C-s> :w<ENTER>
+inoremap <C-s> <esc>:w<ENTER>a
 
 nnoremap - :Switch<cr>
 
 "Open bufexplorer
-nmap ++ \be
+"nmap ++ \be
 
 "Snipmate
 imap <C-j> <Plug>snipMateNextOrTrigger
 smap <C-j> <Plug>snipMateNextOrTrigger
+
+
+"***********************************
+"-----------ABBREVIATIONS-----------
+"***********************************
+iabbrev myname Ville-Valtteri Jäävalli
+iabbrev mymail ville.jaavalli@gmail.com
+iabbrev funciton function
+iabbrev functiton function
+iabbrev fucntion function
+iabbrev funtion function
+iabbrev erturn return
+iabbrev retunr return
+iabbrev reutrn return
+iabbrev reutn return
+iabbrev queyr query
+iabbrev htis this
+iabbrev foreahc foreach
+iabbrev forech foreach
 
 "************************************
 "-------------PLUGINS----------------
