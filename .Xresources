@@ -8,7 +8,7 @@ Xft.hintstyle:           hintslight
 Xft.rgba:                rgb
 Xft.lcdfilter:           lcddefault
 
-dzen2.font:       Termsyn
+!dzen2.font:       Termsyn
 dzen2.foreground: #22EE11
 dzen2.background: green
 
@@ -19,7 +19,7 @@ URxvt.bigfont_key:       o
 URxvt.borderLess:        no
 URxvt.buffered:          false
 URxvt.depth:             32
-URxvt.font:              xft:Termsyn:pixelsize=18:style=Regular
+!URxvt.font:              xft:Termsyn:pixelsize=18:style=Regular
 ! URxvt.italicFont:        xft:Monospace:style=Oblique:pixelsize=10
 URxvt.hold:              true
 URxvt.internalBorder:    0
@@ -35,8 +35,8 @@ URxvt.secondaryScreen:   false
 URxvt.skipScroll:        true
 URxvt.smallfont_key:     p
 URxvt.tripleclickwords:  on
-URxvt.url-select.launcher:  google-chrome-beta
-URxvt.url-launcher:	google-chrome-beta 
+URxvt.url-select.launcher:  google-chrome-stable
+URxvt.url-launcher:	google-chrome 
 URxvt.url-select.underline: true
 URxvt.perl-ext-common:  default,matcher,vtwheel,font-size, clipboard
 URxvt.keysym.C-Up:     perl:font-size:increase

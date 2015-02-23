@@ -1,14 +1,63 @@
 "For vundle
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"************************************
+"-------------PLUGINS----------------
+"************************************
+Bundle 'gmarik/Vundle.vim'
+Bundle 'tpope/vim-fugitive'                     
+"Better movement
+Bundle 'Lokaltog/vim-easymotion'                
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-rails.git'
+"Bundle 'L9'
+Bundle 'scrooloose/nerdtree'
+"Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
+"Keep cursor position after closing file
+Bundle 'restore_view.vim'                       
+"Edit braces
+Bundle 'surround.vim'                           
+"Quickly change between header and code
+Bundle 'a.vim'                                  
+"better buffer browsing
+Bundle 'bufexplorer.zip'                        
+"Bundle 'tsaleh/vim-matchit'                     
+"Quickly comment code
+Bundle 'tComment'                               
+Bundle "MarcWeber/vim-addon-mw-utils"           
+"Useless?
+Bundle "tomtom/tlib_vim"                        
+"Snippets
+Bundle "garbas/vim-snipmate"                    
+"For quick value changing
+Bundle 'AndrewRadev/switch.vim'
+"latex
+Bundle 'LaTeX-Box-Team/LaTeX-Box'
+"json syntax
+Bundle 'elzr/vim-json'
+
+Bundle 'emmet.vim'
+Bundle 'jplaut/vim-arduino-ino'
+Bundle 'Arduino-syntax-file'
+Bundle 'digitaltoad/vim-jade'
+
+call vundle#end() 
+
+
 
 "**************************************
 "----------SETTINGS--------------------
 "**************************************
+"
+filetype  plugin indent on
 
-" Enable syntax highlighting
+syntax on
+
 set hidden
 
 "Folding settings
@@ -19,13 +68,13 @@ hi Folded ctermbg=8
 
 " Better command-line completion
 set wildmenu
-
+"
 " Show partial commands in the last line of the screen
 set showcmd
-
+"
 " Highlight searches 
 set hlsearch
-
+"
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
@@ -78,11 +127,9 @@ set clipboard=unnamedplus
 "cursor position to lower corner
 set cursorline
 
-filetype  plugin indent on
 
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
-set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
 
 set undolevels=100
 
@@ -116,9 +163,6 @@ let g:vim_arduino_auto_open_serial = 1
 set shiftwidth=4
 set tabstop=4
 
-"Spaces istead of tabs
-"set expandtab='noexpandtab'
-
 "***********************************
 "-------------MAPPINGS--------------
 "***********************************
@@ -135,6 +179,7 @@ nnoremap L $
 
 "jj to esc
 imap jj <Esc>
+
 let g:EasyMotion_leader_key = 'ö'
 
 imap <C-n> <backspace>
@@ -155,9 +200,9 @@ imap <C-j> <Plug>snipMateNextOrTrigger
 smap <C-j> <Plug>snipMateNextOrTrigger
 
 
-"***********************************
+""**********************************c
 "-----------ABBREVIATIONS-----------
-"***********************************
+""***********************************
 iabbrev myname Ville-Valtteri Jäävalli
 iabbrev mymail ville.jaavalli@gmail.com
 iabbrev funciton function
@@ -173,45 +218,4 @@ iabbrev htis this
 iabbrev foreahc foreach
 iabbrev forech foreach
 
-"************************************
-"-------------PLUGINS----------------
-"************************************
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'                     
-"Better movement
-Bundle 'Lokaltog/vim-easymotion'                
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-rails.git'
-"Bundle 'L9'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/syntastic'
-"Keep cursor position after closing file
-Bundle 'restore_view.vim'                       
-"Edit braces
-Bundle 'surround.vim'                           
-"Quickly change between header and code
-Bundle 'a.vim'                                  
-"better buffer browsing
-Bundle 'bufexplorer.zip'                        
-Bundle 'tsaleh/vim-matchit'                     
-"Quickly comment code
-Bundle 'tComment'                               
-Bundle "MarcWeber/vim-addon-mw-utils"           
-"Useless?
-Bundle "tomtom/tlib_vim"                        
-"Snippets
-Bundle "garbas/vim-snipmate"                    
-"For quick value changing
-Bundle 'AndrewRadev/switch.vim'
-"latex
-Bundle 'LaTeX-Box-Team/LaTeX-Box'
-"json syntax
-Bundle 'elzr/vim-json'
 
-Bundle 'emmet.vim'
-Bundle 'jplaut/vim-arduino-ino'
-Bundle 'Arduino-syntax-file'
-Bundle 'digitaltoad/vim-jade'
-
-syntax on

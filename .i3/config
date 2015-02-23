@@ -70,8 +70,8 @@ bindsym $mod+F7 exec amixer -c 0 set Master 2dB-
 bindsym $mod+F8 exec amixer -c 0 set Master 2dB+
 
 # screen detection
-bindsym $mod+F12 exec bash $HOME/Scripts/workstation_setup
-bindsym $mod+F11 exec bash $HOME/Scripts/laptop_disp # picture to only laptop disp
+bindsym $mod+F12 exec bash $HOME/Koodia/Scripts/DisplayLayouts/workstation_setup
+bindsym $mod+F11 exec bash $HOME/Koodia/Scripts/DisplayLayouts/laptop_disp # picture to only laptop disp
 #bindsym $mod+f10 exec xrandr --output VGA1 --auto --output DP1 --off; exec xrandr --output LVDS1 --right-of VGA1 
 
 # Swap desktops
@@ -189,3 +189,6 @@ client.focused #0088CC #0088CC #ffffff #dddddd
 client.focused_inactive #333333 #333333 #888888 #292d2e
 client.unfocused #333333 #333333 #888888 #292d2e
 client.urgent #2f343a #900000 #ffffff #900000
+
+
+for_window [class="^Spotify Premium$"] floating enable

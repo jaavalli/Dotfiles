@@ -1,5 +1,5 @@
 #Define path for this user
-PATH="${PATH}:~/Bin:~/Scripts"
+PATH="${PATH}:~/Bin:~/Koodia/Scripts"
 export EDITOR="vim"
 TERM=rxvt
 export BROWSER="google-chrome-beta"
