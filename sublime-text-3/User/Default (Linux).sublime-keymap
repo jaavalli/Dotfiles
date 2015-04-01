@@ -1,0 +1,31 @@
+[
+	{ "keys": ["j", "j"], "command": "exit_insert_mode",
+	"context":
+		[
+			{ "key": "setting.command_mode", "operand": false },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},
+
+	{ "keys": ["g", "c"], "command": "toggle_comment",
+	"context":
+		[
+			{ "key": "setting.command_mode", "operand": true },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},
+
+	{ "keys": ["L"], "command": "move_to", "args": {"to": "eol", "extend": false},
+	"context":
+		[
+			{ "key": "setting.command_mode", "operand": true },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	 },
+	{ "keys": ["H"], "command": "move_to", "args": {"to": "bol", "extend": false},
+	"context":
+		[
+			{ "key": "setting.command_mode", "operand": true },
+			{ "key": "setting.is_widget", "operand": false }
+		] }
+]
