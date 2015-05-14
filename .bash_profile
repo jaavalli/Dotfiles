@@ -1,5 +1,5 @@
 #Define path for this user
-PATH="${PATH}:~/Bin:~/Koodia/Scripts"
+PATH="${PATH}:/home/ville/.gem/ruby/2.2.0/bin"
 export EDITOR="vim"
 TERM=rxvt
 export BROWSER="google-chrome-beta"

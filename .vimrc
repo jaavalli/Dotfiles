@@ -45,6 +45,7 @@ Bundle 'emmet.vim'
 Bundle 'jplaut/vim-arduino-ino'
 Bundle 'Arduino-syntax-file'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'kien/ctrlp.vim'
 
 call vundle#end() 
 
