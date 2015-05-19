@@ -2,11 +2,11 @@
 PATH="${PATH}:/home/ville/.gem/ruby/2.2.0/bin"
 export EDITOR="vim"
 TERM=rxvt
-export BROWSER="google-chrome-beta"
+export BROWSER="google-chrome-stable"
 
 
 #Set vi keybindings to bash
-set -o vi
+set -o emacs
 
 bind "å":vi-movement-mode 
 bind -r "\e"

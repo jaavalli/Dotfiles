@@ -1,14 +1,14 @@
 #include "/home/ville/.xutils/colors/default"
 
 ! *background: #121212
-Xft.dpi:                 102
+Xft.dpi:                96 
 Xft.antialias:           1
 Xft.hinting:             1
 Xft.hintstyle:           hintslight
 Xft.rgba:                rgb
 Xft.lcdfilter:           lcddefault
 
-!dzen2.font:       Termsyn
+dzen2.font:       Termsyn
 dzen2.foreground: #22EE11
 dzen2.background: green
 
@@ -20,6 +20,7 @@ URxvt.borderLess:        no
 URxvt.buffered:          false
 URxvt.depth:             32
 !URxvt.font:              xft:Termsyn:pixelsize=18:style=Regular
+URxvt.font:				 xft:Terminess Powerline:size=8
 ! URxvt.italicFont:        xft:Monospace:style=Oblique:pixelsize=10
 URxvt.hold:              true
 URxvt.internalBorder:    0
@@ -27,7 +28,7 @@ URxvt.jumpScroll:        true
 URxvt.keysym.C-i:        perl:url-select:select_next
 URxvt.letterSpace:       0
 URxvt.loginShell:        true
-URxvt.perl-ext:          default,url-select
+URxvt.perl-ext:          default,url-select,font-size
 URxvt.scrollBar:         off
 URxvt.scrollTtyKeypress: off
 URxvt.scrollTtyOutput:   off
@@ -38,8 +39,7 @@ URxvt.tripleclickwords:  on
 URxvt.url-select.launcher:  google-chrome-stable
 URxvt.url-launcher:	google-chrome 
 URxvt.url-select.underline: true
-URxvt.perl-ext-common:  default,matcher,vtwheel,font-size, clipboard
-URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.perl-ext-common:  default,matcher,vtwheel,font-size,clipboard,keyboard-select,fullscreen
 URxvt.matcher.button: 1
 URxvt.iso14755: false
 URxvt.iso14755_52: false
@@ -61,8 +61,13 @@ URxvt.keysym.C-Left:   perl:font-size:decrease
 URxvt.keysym.C-S-Right:   perl:font-size:incglobal
 URxvt.keysym.C-S-Left: perl:font-size:decglobal
 
-URxvt.keysym.M-c:   perl:clipboard:copy
-URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.C-y:   perl:clipboard:copy
+URxvt.keysym.C-v:   perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+
+URxvt.keysym.F11: perl:fullscreen:switch 
 
 *saveLines:1000

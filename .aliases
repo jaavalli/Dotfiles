@@ -15,7 +15,7 @@ alias .='cd ..'
 alias ..='cd ../..'
 alias ...='cd ../../..'
 
-alias t='urxvt -cd $PWD &'
+alias t='bash -c "urxvt -cd $PWD &"'
 
 alias todo='vim $HOME/Documents/todo.txt'
 alias vimrc='vim $HOME/.vimrc'
@@ -26,6 +26,13 @@ alias r='ranger'
 alias sdn='shutdown now'
 alias gull='git pull'
 alias gush='git push'
+alias gstat='git status'
+alias gcom='git commit '
+
+alias tempmon='watch -n 2 sensors'
+
+alias monsleep='sleep 1; xset dpms force off'
+alias nosleep='setterm -blank 0 -powerdown 0'
 
 alias upd='yaourt -Suy'
 alias inst='yaourt -S'

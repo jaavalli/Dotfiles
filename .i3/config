@@ -92,7 +92,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 #lock screen
-bindsym $mod+o exec i3lock
+bindsym $mod+o exec fancylock 
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle

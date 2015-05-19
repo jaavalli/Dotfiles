@@ -5,6 +5,7 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"Bash Build System",
 		"Emmet",
 		"FindKeyConflicts",
 		"Git",
@@ -15,9 +16,11 @@
 		"JavaScriptNext - ES6 Syntax",
 		"JsFormat",
 		"JSHint Gutter",
+		"JSX",
 		"LaTeXTools",
 		"Nettuts+ Fetch",
 		"Package Control",
+		"ReactJS",
 		"Sass",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
