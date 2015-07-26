@@ -40,7 +40,7 @@ Bundle 'AndrewRadev/switch.vim'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
 "json syntax
 Bundle 'elzr/vim-json'
-
+Plugin 'jelera/vim-javascript-syntax'
 Bundle 'emmet.vim'
 Bundle 'jplaut/vim-arduino-ino'
 Bundle 'Arduino-syntax-file'
@@ -157,6 +157,10 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 
 "monitor serial 
 let g:vim_arduino_auto_open_serial = 1
+
+"Colors
+set t_Co=256
+colorscheme molokai
 
 "------------INDENTATION-----------
 

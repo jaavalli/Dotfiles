@@ -29,6 +29,7 @@
 			{ "key": "setting.is_widget", "operand": false }
 		]
 	 },
+	 { "keys": ["ctrl+alt+shift+i"], "command": "toggle_overwrite" },
 
 	{ "keys": ["alt+1"], "command": "select_by_index", "args": { "index": 0 } },
 	{ "keys": ["alt+2"], "command": "select_by_index", "args": { "index": 1 } },

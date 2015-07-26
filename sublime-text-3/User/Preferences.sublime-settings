@@ -1,8 +1,12 @@
 {
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"font_face": "Droid Sans Mono",
 	"font_size": 8,
 	"ignored_packages":
 	[
 	],
-	"theme": "SoDaReloaded.sublime-theme"
+	"tab_size": 2,
+	"theme": "SoDaReloaded.sublime-theme",
+	"word_wrap": "true",
+	"wrap_width": 100
 }

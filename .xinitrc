@@ -13,4 +13,5 @@ xset -b
 keynav &
 xiset m 1/2 4
 bash /usr/local/sbin/thinkpad-dock.sh
+megasync &
 exec i3
