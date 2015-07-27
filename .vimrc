@@ -16,7 +16,8 @@ Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'L9'
 Bundle 'scrooloose/nerdtree'
-"Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Xuyuanp/nerdtree-git-plugin'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 "Keep cursor position after closing file
 Bundle 'restore_view.vim'                       
@@ -26,14 +27,15 @@ Bundle 'surround.vim'
 Bundle 'a.vim'                                  
 "better buffer browsing
 Bundle 'bufexplorer.zip'                        
-"Bundle 'tsaleh/vim-matchit'                     
 "Quickly comment code
 Bundle 'tComment'                               
+"Snipmate dep
 Bundle "MarcWeber/vim-addon-mw-utils"           
-"Useless?
+"Snipmate dependency
 Bundle "tomtom/tlib_vim"                        
 "Snippets
 Bundle "garbas/vim-snipmate"                    
+Bundle 'honza/vim-snippets'
 "For quick value changing
 Bundle 'AndrewRadev/switch.vim'
 "latex
@@ -46,6 +48,13 @@ Bundle 'jplaut/vim-arduino-ino'
 Bundle 'Arduino-syntax-file'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'kien/ctrlp.vim'
+"Automatic closing brackets
+Bundle 'Raimondi/delimitMate'
+"Smart js completion with ycm
+Bundle 'marijnh/tern_for_vim'
+Bundle 'crusoexia/vim-monokai'
+"show intendation lewels
+Bundle 'nathanaelkane/vim-indent-guides'
 
 call vundle#end() 
 
@@ -88,7 +97,7 @@ set backspace=indent,eol,start
 
 " When opening a new line and no filetype-specific indenting is enabled, keep
 " the same indent as the line you're currently on.
-set autoindent
+"set autoindent 
 
 "Relative line numbering
 set rnu
@@ -160,17 +169,19 @@ let g:vim_arduino_auto_open_serial = 1
 
 "Colors
 set t_Co=256
-colorscheme molokai
+colorscheme monokai
 
 "------------INDENTATION-----------
 
 " Indentation settings for using 2 spaces instead of tabs.
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 "***********************************
 "-------------MAPPINGS--------------
 "***********************************
+
+let mapleader=","
 
 "f search, F hide search hilights
 map f /
@@ -183,7 +194,9 @@ nnoremap H ^
 nnoremap L $
 
 "jj to esc
-imap jj <Esc>
+"imap jj <Esc>
+"jk to esc
+inoremap jk <Esc>
 
 let g:EasyMotion_leader_key = 'ö'
 
@@ -198,7 +211,7 @@ inoremap <C-s> <esc>:w<ENTER>a
 nnoremap - :Switch<cr>
 
 "Open bufexplorer
-nmap ++ \be
+nmap bu :BufExplorer<cr>
 
 "Snipmate
 imap <C-j> <Plug>snipMateNextOrTrigger
