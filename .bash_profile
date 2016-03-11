@@ -5,8 +5,8 @@ TERM=rxvt
 export BROWSER="google-chrome-stable"
 
 
-#Set vi keybindings to bash
-set -o emacs
+#Set keybindings to bash
+# set -o emacs
 
 bind "å":vi-movement-mode 
 bind -r "\e"

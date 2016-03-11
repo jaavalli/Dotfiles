@@ -39,7 +39,7 @@ Bundle 'honza/vim-snippets'
 "For quick value changing
 Bundle 'AndrewRadev/switch.vim'
 "latex
-Bundle 'LaTeX-Box-Team/LaTeX-Box'
+"Bundle 'LaTeX-Box-Team/LaTeX-Box' */
 "json syntax
 Bundle 'elzr/vim-json'
 Plugin 'jelera/vim-javascript-syntax'
@@ -95,9 +95,6 @@ set wrap
 " Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
 
-" When opening a new line and no filetype-specific indenting is enabled, keep
-" the same indent as the line you're currently on.
-"set autoindent 
 
 "Relative line numbering
 set rnu
@@ -154,7 +151,7 @@ let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 let g:NERDTreeDirArrows=0
-let NERDTreeIgnore=['\.o$', '\.pro$']
+let NERDTreeIgnore=['\.o$', '\.pro$', '\.aux$']
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
 
@@ -173,9 +170,15 @@ colorscheme monokai
 
 "------------INDENTATION-----------
 
+" When opening a new line and no filetype-specific indenting is enabled, keep
+" the same indent as the line you're currently on.
+set autoindent 
+set noexpandtab
+
 " Indentation settings for using 2 spaces instead of tabs.
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
+
 
 "***********************************
 "-------------MAPPINGS--------------
